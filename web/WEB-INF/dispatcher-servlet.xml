@@ -11,7 +11,7 @@
        https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 <!--기본-->
-    <context:component-scan base-package="org.example.springboard2" />
+    <context:component-scan base-package="org.portfolio.defshopYG" />
 
     <mvc:annotation-driven/>
 

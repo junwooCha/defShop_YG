@@ -9,7 +9,7 @@
 
     <bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3308/springboard"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3308/domabam"/>
         <property name="username" value="root"/>
         <property name="password" value="koreait"/>
     </bean>
@@ -21,8 +21,8 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="mapperLocations" value="classpath:/mappers/*.xml" />
-        <property name="typeAliasesPackage" value="org.example.springboard2" />
+        <property name="typeAliasesPackage" value="org.portfolio.defshopYG" />
     </bean>
 
-    <mybatis-spring:scan base-package="org.example.springboard2" />
+    <mybatis-spring:scan base-package="org.portfolio.defshopYG" />
 </beans>

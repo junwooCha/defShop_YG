@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+    font-family:sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+h2{
+    padding-top: 20px;
+}
+
+.joinForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+font{
+    font-size: 12px;
+    color: red;
+    padding-right: 100px;
+}
+
+.textForm{
+    border-bottom: 2px solid #adadad;
+    width: 20%;
+    margin: 10px 30px 5px 30px;
+    padding: 10px 10px;
+}
+
+.labels > label:nth-child(2){
+    padding-left: 30%;
+}
+
+.labels{
+    width: 20%;
+    margin: 30px 30px 5px 30px;
+    padding: 10px 10px;
+}
+
+.btn{
+    margin-bottom: 40px;
+    width:20%;
+    height:40px;
+    background: linear-gradient(125deg,#81ecec,#6c5ce7,#81ecec);
+    background-size: 200%;
+    color:white;
+    font-weight: bold;
+    border:none;
+    border-radius: 15px;
+    cursor:pointer;
+    transition: 0.4s;
+}
+
+
+
+.id{
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #000000;
+    font-size:16px;
+    height:25px;
+    background: none;
+}
+
+.pw{
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #000000;
+    font-size:16px;
+    height:25px;
+    background: none;
+}
+
+.name{
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #000000;
+    font-size:16px;
+    height:25px;
+    background: none;
+}
+
+.email{
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #000000;
+    font-size:16px;
+    height:25px;
+    background: none;
+}
+
+.nickname{
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #000000;
+    font-size:16px;
+    height:25px;
+    background: none;
+}
+
+.cellphoneNo{
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #000000;
+    font-size:16px;
+    height:25px;
+    background: none;
+}
