@@ -1,4 +1,4 @@
-package org.portfolio.defshopYG.login.model;
+package org.portfolio.defshopYG.user.model;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -47,10 +47,9 @@
         </form>
     </div>
 </div>
-
 <div id="whereId" class="modal">
     <div id="noneAndblock">
-        <form action="/user/findId" method="post">
+        <form id="whereIdFrm" onsubmit="return false;">
             <div class="center"> <input type="text" name="nm" placeholder="이름" required></div>
             <div class="center"> <input type="text" name="phone" placeholder="번호" required></div>
             <div class="center">
@@ -61,4 +60,4 @@
     </div>
 </div>
 
-<script src="/res/js/login.js?ver=2"></script>
+<script src="/res/js/login.js?ver=1"></script>

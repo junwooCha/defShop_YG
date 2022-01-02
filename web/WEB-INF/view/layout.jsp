@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${requestScope.title}</title>
+    <title>${title}</title>
     <link rel="stylesheet" href="/res/css/layout.css?var=3">
 </head>
 <body>
@@ -46,7 +46,7 @@
             </ul>
         </div>
     </div>
-    <div class="body"><jsp:include page="/WEB-INF/view/${requestScope.page}.jsp"></jsp:include></div>
+    <div class="body"><jsp:include page="/WEB-INF/view/${page}.jsp"></jsp:include></div>
     <div class="footer">
         <div>대표전화 : 010-2411-2164</div>
         <div>대표자명 : 조성우</div>
