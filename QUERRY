@@ -1,0 +1,84 @@
+-------회원 테이블--------
+CREATE TABLE def_user(
+	iuser INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	nm VARCHAR(5) NOT NULL,
+	phone VARCHAR (20) UNIQUE NOT NULL,
+	uid VARCHAR(20) UNIQUE NOT NULL,
+	upw VARCHAR(200) NOT NULL,
+	email VARCHAR(300) UNIQUE NOT NULL,
+	profileImg VARCHAR(100),
+	address_post int(5) NOT NULL,
+	address_primary VARCHAR(100) NOT NULL,
+	address_secondary VARCHAR(100),
+	check TINYINT UNSIGNED CHECK(gender IN (0, 1)),
+	nickname VARCHAR(70) UNIQUE,
+	rdt DATETIME DEFAULT NOW()
+);
+
+------레벨테이블-------
+
+CREATE TABLE def_user_level(
+    user_level INT(10) UNSIGNED,
+    user_level_bar INT(3000) UNSIGNED
+);
+
+------팔로우 테이블-------
+CREATE TABLE def_user_follow(
+
+);
+
+------위시 리스트 테이블------(찜, 장바구니)
+CREATE TABLE def_user_wish(
+
+);
+
+-------1:1문의 테이블 -------
+CREATE TABLE def_user_qna(
+
+);
+
+-------이벤트페이지-------
+CREATE TABLE def_user_event(
+
+);
+
+-------블랙리스트페이지-------
+CREATE TABLE def_user_blacklist(
+
+);
+
+-------커뮤니티페이지-------
+CREATE TABLE def_user_community(
+
+);
+
+-------리뷰페이지-------
+CREATE TABLE def_user_review(
+
+);
+
+-------용품페이지--------
+CREATE TABLE def_user_goods(
+
+);
+
+--------경매시스템---------
+CREATE TABLE def_user_auction(
+
+)
+
+-------종합페이지--------
+CREATE TABLE def_board_main(
+	iboard INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	writer INT UNSIGNED NOT NULL,
+	ctnt VARCHAR(2000) NOT NULL,
+	domNm VARCHAR(40) NOT NULL,
+	domImg VARCHAR(100),
+	domCurBuy VARCHAR(20) NOT NULL,
+	domImBuy VARCHAR(20) NOT NULL,
+	hit INT UNSIGNED NOT NULL DEFAULT 0,
+	rdt DATETIME DEFAULT NOW(),
+	mdt DATETIME DEFAULT NOW(),
+	FOREIGN KEY (writer) REFERENCES def_user(iuser)
+);
+
