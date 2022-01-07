@@ -25,13 +25,14 @@ public class Utils {
         return (UserEntity) session.getAttribute(Const.LOGIN_USER);
     }
 
+//    타일즈로 변경 하기전 사용 메소드 레이아웃리턴-> 쓰고싶은 페이지
     public static String layoutView(Model model, String title, String page){
         model.addAttribute("title", title);
         model.addAttribute("page", page);
         return "layout";
     }
 
-
+//    XSS공격 접근제한 메소드
     public static String replaceStr(String str){
         return str.replace("<","&lt")
                 .replace(">", "&gt")
