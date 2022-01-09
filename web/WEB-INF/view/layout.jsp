@@ -38,11 +38,12 @@
         <div class="mainname"><a href="/page/main">def shop</a></div>
         <div class="menu">
             <ul>
-                <li><a>dragon</a></li>
-                <li><a>lilys</a></li>
-                <li><a>bage</a></li>
-                <li><a>dino</a></li>
-                <li><a>commen</a></li>
+                <li><a href="/page/domabam">도마뱀</a></li> <!--카테고리 클릭시 페이지이동-->
+                <li><a href="/page/goods">용품</a></li>
+                <li><a href="/page/event">이벤트</a></li>
+                <li><a>게시판</a></li>
+                <li><a>커뮤니티</a></li>
+                <li><a>블랙리스트</a></li>
             </ul>
         </div>
     </div>
